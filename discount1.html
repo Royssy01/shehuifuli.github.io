@@ -15,27 +15,30 @@
             height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start; /* 修改为从顶部开始 */
         }
 
         .header {
             font-size: 64px; /* 放大字号 */
             padding: 10px;
-            color: #333; /* 深色文字 */
+            color: brown; /* 棕红色文字 */
             margin: 10px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* 文字阴影 */
+            font-weight: bold; /* 加粗 */
+            margin-top: 10vh; /* 调整到页面顶部10%左右位置 */
         }
 
         .subheader {
-            font-size: 18px; /* 较小字号 */
+            font-size: 24px; /* 适当增大字号 */
             padding: 5px;
             color: #777; /* 灰色文字 */
             margin: 5px;
+            margin-top: 20px; /* 与第一行保持一定空隙 */
         }
 
         .offer {
             font-size: 48px; /* 放大字号 */
-            color: #333; /* 深色文字 */
+            color: red; /* 红色文字 */
             font-style: italic;
             font-weight: bold;
             padding: 20px;
