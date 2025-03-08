@@ -9,40 +9,67 @@
             margin: 0;
             padding: 0;
             text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
         }
         .header {
             font-size: 48px; /* 最大字号 */
             padding: 20px;
+            color: #333;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .subheader {
+            font-size: 24px; /* 小一个字号 */
+            padding: 10px;
+            color: #555;
+        }
+        .offer {
+            font-size: 32px; /* 最大字号 */
+            color: red;
+            font-style: italic;
+            font-weight: bold;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #fff;
+            display: inline-block;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .gallery {
             display: grid;
             grid-template-columns: repeat(4, 1fr); /* 四列 */
             grid-gap: 10px; /* 图片间隔 */
             padding: 20px;
+            margin-top: 20px;
         }
         .gallery img {
             width: 100%; /* 正方形图片 */
             height: auto;
             cursor: pointer; /* 鼠标指针变为点击手形 */
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
         }
         .footer {
-            font-size: 14px; 
+            font-size: 14px;
             padding: 20px;
+            color: #777;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <div class="header">社恵福栗</div>
+    <div class="subheader">使用条件：到店出示栗仁卡享受折扣</div>
+    <div class="offer">具体优惠：88折</div>
     <div class="gallery">
         <!-- 24张正方形logo图片，每张图片点击后跳转到一个新的网页 -->
+        <!-- 示例中只展示了4张图片，实际应重复至24张 -->
         <a href="discount1.html"><img src="https://wx4.sinaimg.cn/orj360/007Vzxzely1hz9kli8idlj30sg0sgdil.jpg" alt="金掌勺"></a>
-        <a href="discount2.html"><img src="https://wx2.sinaimg.cn/large/007Vzxzely1hz9kpzlpxdj30sg0sgjsa.jpg" alt="青年公社"></a>
-        <a href="discount3.html"><img src="https://img.qianggen.net/uploadfile/2024/0203/20240203085301756.jpg" alt="沁原羔羊火锅"></a>
-        <a href="discount4.html"><img src="https://th.bing.com/th/id/R.4f054c371af17ec28c7de07ca2e3456b?rik=jEOdPJbv99mmPw&riu=http%3a%2f%2fimg.qqjm.com%2f2019%2f03%2f1698F96120C.jpg&ehk=9YZMuAbduQGAVvfchgyFh3RlSLeMXv8uyGt3WXkWwTQ%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="汉拿山韩式烤肉"></a>
-        <a href="discount1.html"><img src="https://wx4.sinaimg.cn/orj360/007Vzxzely1hz9kli8idlj30sg0sgdil.jpg" alt="金掌勺"></a>
-        <a href="discount2.html"><img src="https://wx2.sinaimg.cn/large/007Vzxzely1hz9kpzlpxdj30sg0sgjsa.jpg" alt="青年公社"></a>
-        <a href="discount3.html"><img src="https://img.qianggen.net/uploadfile/2024/0203/20240203085301756.jpg" alt="沁原羔羊火锅"></a>
-        <a href="discount4.html"><img src="https://th.bing.com/th/id/R.4f054c371af17ec28c7de07ca2e3456b?rik=jEOdPJbv99mmPw&riu=http%3a%2f%2fimg.qqjm.com%2f2019%2f03%2f1698F96120C.jpg&ehk=9YZMuAbduQGAVvfchgyFh3RlSLeMXv8uyGt3WXkWwTQ%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="汉拿山韩式烤肉"></a> <a href="discount1.html"><img src="https://wx4.sinaimg.cn/orj360/007Vzxzely1hz9kli8idlj30sg0sgdil.jpg" alt="金掌勺"></a>
         <a href="discount2.html"><img src="https://wx2.sinaimg.cn/large/007Vzxzely1hz9kpzlpxdj30sg0sgjsa.jpg" alt="青年公社"></a>
         <a href="discount3.html"><img src="https://img.qianggen.net/uploadfile/2024/0203/20240203085301756.jpg" alt="沁原羔羊火锅"></a>
         <a href="discount4.html"><img src="https://th.bing.com/th/id/R.4f054c371af17ec28c7de07ca2e3456b?rik=jEOdPJbv99mmPw&riu=http%3a%2f%2fimg.qqjm.com%2f2019%2f03%2f1698F96120C.jpg&ehk=9YZMuAbduQGAVvfchgyFh3RlSLeMXv8uyGt3WXkWwTQ%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="汉拿山韩式烤肉"></a>
