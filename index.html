@@ -1,89 +1,104 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>社恵福栗</title>
-    <style>
-        body {
-            text-align: center;
-            font-family: Arial, sans-serif;
-        }
-        .title-image {
-            vertical-align: middle;
-        }
-        .title-text {
-            font-size: 48px;
-            color: black;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px #000000;
-            display: inline-block;
-            vertical-align: middle;
-        }
-        .conditions {
-            font-size: small;
-            color: grey;
-        }
-        .public-account {
-            font-size: small;
-            color: blue;
-            text-decoration: underline;
-        }
-        .category-box {
-            background-color: #ffff99; /* 浅黄色 */
-            padding: 10px;
-            margin-top: 10px;
-        }
-        .category-title {
-            vertical-align: middle;
-        }
-        .square-image {
-            width: 100px; /* 正方形图片大小 */
-            height: 100px;
-            margin: 10px;
-        }
-        .footer {
-            font-size: x-small;
-            margin-top: 20px;
-        }
-    </style>
+ <meta charset="UTF-8">
+ <title>社恵福栗</title>
+ <style>
+  body {
+   text-align: center;
+   font-family: 'SimSun', 'Heiti TC', sans-serif; /* 设置默认字体为黑体，备选为宋体 */
+  }
+ 
+  .title-image {
+   width: 10px; /* 缩小图片大小 */
+   height: 10px;
+   vertical-align: middle;
+  }
+ 
+  .title-text {
+   font-size: 10px; /* 与图片大小对齐 */
+   color: black;
+   font-weight: normal; /* 移除粗体 */
+   text-shadow: none; /* 去掉阴影 */
+   font-family: 'STSong', 'SimSun', 'Heiti TC', sans-serif; /* 设置字体为华文中宋，备选为黑体 */
+   display: inline-block;
+   vertical-align: middle;
+  }
+ 
+  .conditions {
+   font-size: small;
+   color: grey;
+  }
+ 
+  .public-account {
+   font-size: small;
+   color: blue;
+   text-decoration: underline;
+  }
+ 
+  .category-box {
+   margin-top: 20px;
+  }
+ 
+  .category-title {
+   width: 10px; /* 缩小图片大小 */
+   height: 10px;
+   vertical-align: middle;
+  }
+ 
+  .category-text {
+   font-size: 10px; /* 与图片大小对齐 */
+   color: black;
+   font-family: 'STSong', 'SimSun', 'Heiti TC', sans-serif; /* 设置字体为华文中宋，备选为黑体 */
+   display: inline-block;
+   vertical-align: middle;
+  }
+ 
+  .image-row {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   margin-top: 10px;
+  }
+ 
+  .image-item {
+   width: calc(25% - 10px); /* 4列排列，减去间距 */
+   margin-bottom: 10px; /* 行间距 */
+  }
+ 
+  .square-image {
+   width: 100%; /* 使图片填满容器 */
+   height: auto; /* 保持图片比例 */
+  }
+ 
+  .footer {
+   margin-top: 20px;
+   font-size: small;
+   color: grey;
+  }
+ </style>
 </head>
 <body>
-    <div>
-        <img src="https://pic1.imgdb.cn/item/67d2c5ba88c538a9b5bc8293.png"  alt="社恵福栗" class="title-image">
-        <span class="title-text">社恵福栗</span>
-    </div>
-    <div class="conditions">使用条件：凭栗仁卡/学生证/相关证明到店享受优惠</div>
-    <div>
-        <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzkyNjA5OTc4MA==&scene=124#wechat_redirect" class="public-account">领取栗仁卡请点击关注「社恵福栗」公众号</a>
-    </div>
-    <div class="category-box">
-        <img src="https://pic1.imgdb.cn/item/67d2c73088c538a9b5bc82d7.png" alt="餐饮" class="category-title">
-        <span>餐饮</span>
-        <div>
-            <a href="qingniangongshe.html"><img src="https://pic1.imgdb.cn/item/67d13ccd88c538a9b5bc0f18.png" alt="青年公社" class="square-image"></a>
-            <a href="hannashan.html"><img src="https://pic1.imgdb.cn/item/67d13d8588c538a9b5bc0ff4.png" alt="汉拿山" class="square-image"></a>
-            <a href="jubang.html"><img src="https://pic1.imgdb.cn/item/67d1304288c538a9b5bc0654.png" alt="剧bang" class="square-image"></a>
-            <a href="guanshichiba.html"><img src="https://pic1.imgdb.cn/item/67d13e3e88c538a9b5bc10e6.png" alt="管氏翅吧" class="square-image"></a>
-            <a href="changxiangju.html"><img src="https://pic1.imgdb.cn/item/67d2bfaf88c538a9b5bc81c0.png" alt="常湘聚" class="square-image"></a>
-            <a href="ningji.html"><img src="https://pic1.imgdb.cn/item/67d135d188c538a9b5bc0a57.png" alt="柠季" class="square-image"></a>
-            <a href="womeiyingcheng.html"><img src="https://pic1.imgdb.cn/item/67d13b8588c538a9b5bc0ebf.png" alt="沃美影城" class="square-image"></a>
-            <a href="lushanchuan.html"><img src="https://pic1.imgdb.cn/item/67d13eb988c538a9b5bc1187.png" alt="卤山川" class="square-image"></a>
-            <a href="miniye.html"><img src="https://pic1.imgdb.cn/item/67d2c0b188c538a9b5bc81e4.png" alt="迷你椰" class="square-image"></a>
-            <a href="niuyofan.html"><img src="https://pic1.imgdb.cn/item/67d13a8988c538a9b5bc0e94.png" alt="牛yo范" class="square-image"></a>
-            <a href="xiangcunji.html"><img src="https://pic1.imgdb.cn/item/67d135d188c538a9b5bc0a56.png" alt="乡村基" class="square-image"></a>
-            <a href="jiangbianchengwai.html"><img src="https://pic1.imgdb.cn/item/67d1304288c538a9b5bc0653.png" alt="江边城外" class="square-image"></a>
-            <a href="liyin.html"><img src="https://pic1.imgdb.cn/item/67d1304288c538a9b5bc0656.png" alt="荔银" class="square-image"></a>
-
-        </div>
-    </div>
-    <div class="category-box" style="background-color: #99ccff;"> <!-- 浅蓝色 -->
-        <img src="https://pic1.imgdb.cn/item/67d2c72b88c538a9b5bc82d6.png" alt="生活图片" class="category-title">
-        <span>生活</span>
-        <div>
-            <a href="lanmengjie.html"><img src="https://pic1.imgdb.cn/item/67d13bf688c538a9b5bc0edb.png" alt="蓝梦洁" class="square-image"></a>
-            <a href="xiaoahui.html"><img src="https://pic1.imgdb.cn/item/67d1304388c538a9b5bc0657.png" alt="小阿灰" class="square-image"></a>
-        </div>
-    </div>
-    <div class="footer">@中国社会科学院大学学生会公关部出品</div>
+ <div>
+  <img src="https://pic1.imgdb.cn/item/67d2c72b88c538a9b5bc82d6.png" alt="社恵福栗" class="title-image">
+  <span class="title-text">社恵福栗</span>
+ </div>
+ <div class="conditions">条件</div>
+ <div class="public-account">公众号</div>
+ <div class="category-box" style="background-color: #99ccff;"> <!-- 浅蓝色 -->
+  <img src="https://pic1.imgdb.cn/item/67d2c72b88c538a9b5bc82d6.png" alt="餐饮图片" class="category-title">
+  <span class="category-text">餐饮</span>
+  <div class="image-row">
+   <!-- 餐饮图片链接 -->
+  </div>
+ </div>
+ <div class="category-box" style="background-color: #99ccff;"> <!-- 浅蓝色 -->
+  <img src="https://pic1.imgdb.cn/item/67d2c72b88c538a9b5bc82d6.png" alt="生活图片" class="category-title">
+  <span class="category-text">生活</span>
+  <div class="image-row">
+   <!-- 生活图片链接 -->
+  </div>
+ </div>
+ <div class="footer">@中国社会科学院大学学生会公关部出品</div>
 </body>
 </html>
