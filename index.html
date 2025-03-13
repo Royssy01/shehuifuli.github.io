@@ -57,8 +57,11 @@
             justify-content: space-around;
         }
         .image-item {
-            flex: 0 0 10%; /* 4列排列 */
-            margin: 10px; /* 调整间距 */
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 四列 */
+            grid-gap: 7px; /* 图片间隔 */
+            padding: 20px;
+            margin-top: 20px;
         }
         .footer {
             font-size: x-small;
