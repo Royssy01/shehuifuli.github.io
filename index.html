@@ -1,112 +1,87 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>社恵福栗</title>
     <style>
-        body {
+        body, html {
+            margin: 0;
+            padding: 0;
             text-align: center;
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
         }
-        .title-image {
-            vertical-align: middle;
-            width: 100px; /* 缩小图片尺寸 */
-            height: 100px; /* 缩小图片尺寸 */
+        .header {
+            font-size: 40px;
+            padding: 15px;
+            color: #333;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        .title-text {
-            font-size: 100px; /* 缩小文字尺寸以对齐图片 */
-            color: black;
-            font-weight: bold;
-            text-shadow: none; /* 去掉阴影 */
-            font-family: 'Arial Black', Gadget, sans-serif; /* 更换为艺术字体 */
-            display: inline-block;
-            vertical-align: middle;
+        .subheader {
+            font-size: 15px; 
+            padding: 10px;
+            color: #555;
         }
-        .conditions {
-            font-size: small;
-            color: grey;
-        }
-        .public-account {
-            font-size: small;
+        .offer {
+            font-size: 15px; /* 最大字号 */
             color: blue;
-            text-decoration: underline;
-        }
-        .category-box {
-            background-color: #ffff99; /* 浅黄色 */
-            padding: 30px;
-            margin-top: 30px;
-        }
-        .category-title {
-            vertical-align: middle;
-            width: 30px; /* 缩小图片尺寸 */
-            height: 30px; /* 缩小图片尺寸 */
-        }
-        .category-text {
-            font-size: 30px; /* 字号变大，与10x10px的图片一样大 */
+            padding: 5px;
+            background-color: #fff;
             display: inline-block;
-            vertical-align: middle;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
-        .square-image {
-            width: 500px; /* 正方形图片大小 */
-            height: 500px;
-            margin: 5px; /* 调整间距 */
-        }
-        .image-row {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        .image-item {
+        .gallery {
             display: grid;
             grid-template-columns: repeat(4, 1fr); /* 四列 */
             grid-gap: 7px; /* 图片间隔 */
             padding: 20px;
             margin-top: 20px;
         }
+        .gallery img {
+            width: 100%; /* 正方形图片 */
+            height: auto;
+            cursor: pointer; /* 鼠标指针变为点击手形 */
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
         .footer {
-            font-size: x-small;
+            font-size: 14px;
+            padding: 20px;
+            color: #777;
             margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <div>
-        <img src="https://pic1.imgdb.cn/item/67d2c5ba88c538a9b5bc8293.png"  alt="社恵福栗" class="title-image">
-        <span class="title-text">社恵福栗</span>
-    </div>
-    <div class="conditions">使用条件：凭栗仁卡/学生证/相关证明到店享受优惠</div>
-    <div>
-        <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzkyNjA5OTc4MA==&scene=124#wechat_redirect" class="public-account">领取栗仁卡请点击关注「社恵福栗」公众号</a>
-    </div>
-    <div class="category-box">
-        <img src="https://pic1.imgdb.cn/item/67d2c73088c538a9b5bc82d7.png" alt="餐饮" class="category-title">
-        <span class="category-text">餐饮</span>
-        <div class="image-row">
-            <!-- 餐饮图片链接 -->
-            <a href="qingniangongshe.html" class="image-item"><img src="https://pic1.imgdb.cn/item/67d13ccd88c538a9b5bc0f18.png" alt="青年公社" class="square-image"></a>
-            <a href="hannashan.html" class="image-item"><img src="https://pic1.imgdb.cn/item/67d13d8588c538a9b5bc0ff4.png" alt="汉拿山" class="square-image"></a>
-            <a href="jubang.html" class="image-item"><img src="https://pic1.imgdb.cn/item/67d1304288c538a9b5bc0654.png" alt="剧bang" class="square-image"></a>
-            <a href="guanshichiba.html" class="image-item"><img src="https://pic1.imgdb.cn/item/67d13e3e88c538a9b5bc10e6.png" alt="管氏翅吧" class="square-image"></a>
-            <a href="changxiangju.html" class="image-item"><img src="https://pic1.imgdb.cn/item/67d2bfaf88c538a9b5bc81c0.png" alt="常湘聚" class="square-image"></a>
-            <a href="ningji.html" class="image-item"><img src="https://pic1.imgdb.cn/item/67d135d188c538a9b5bc0a57.png" alt="柠季" class="square-image"></a>
-            <a href="womeiyingcheng.html" class="image-item"><img src="https://pic1.imgdb.cn/item/67d13b8588c538a9b5bc0ebf.png" alt="沃美影城" class="square-image"></a>
-            <a href="lushanchuan.html" class="image-item"><img src="https://pic1.imgdb.cn/item/67d13eb988c538a9b5bc1187.png" alt="卤山川" class="square-image"></a>
-            <a href="miniye.html" class="image-item"><img src="https://pic1.imgdb.cn/item/67d2c0b188c538a9b5bc81e4.png" alt="迷你椰" class="square-image"></a>
-            <a href="niuyofan.html" class="image-item"><img src="https://pic1.imgdb.cn/item/67d13a8988c538a9b5bc0e94.png" alt="牛yo范" class="square-image"></a>
-            <a href="xiangcunji.html" class="image-item"><img src="https://pic1.imgdb.cn/item/67d135d188c538a9b5bc0a56.png" alt="乡村基" class="square-image"></a>
-            <a href="jiangbianchengwai.html" class="image-item"><img src="https://pic1.imgdb.cn/item/67d1304288c538a9b5bc0653.png" alt="江边城外" class="square-image"></a>
-            <a href="liyin.html" class="image-item"><img src="https://pic1.imgdb.cn/item/67d1304288c538a9b5bc0656.png" alt="荔银" class="square-image"></a> <!-- ...其他餐饮图片链接... -->
-        </div>
-    </div>
-    <div class="category-box" style="background-color: #99ccff;"> <!-- 浅蓝色 -->
-        <img src="https://pic1.imgdb.cn/item/67d2c72b88c538a9b5bc82d6.png" alt="生活图片" class="category-title">
-        <span class="category-text">生活</span>
-        <div class="image-row">
-            <!-- 生活图片链接 -->
-            <a href="lanmengjie.html" class="image-item"><img src="https://pic1.imgdb.cn/item/67d13bf688c538a9b5bc0edb.png" alt="蓝梦洁" class="square-image"></a>
-            <a href="xiaoahui.html" class="image-item"><img src="https://pic1.imgdb.cn/item/67d1304388c538a9b5bc0657.png" alt="小阿灰" class="square-image"></a>
-        </div>
+    <div class="header">社 恵 福 栗</div>
+    <div class="subheader">使用条件：到店出示栗仁卡享受折扣</div>
+    <div class="offer">
+    <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzkyNjA5OTc4MA==&scene=124#wechat_redirect">领取栗仁卡请关注「社恵福栗」公众号</a></div>
+    <div class="gallery">
+        <!-- 24张正方形logo图片，每张图片点击后跳转到一个新的网页 -->
+            <a href="qingniangongshe.html"><img src="https://pic1.imgdb.cn/item/67d13ccd88c538a9b5bc0f18.png" alt="青年公社" ></a>
+            <a href="hannashan.html"><img src="https://pic1.imgdb.cn/item/67d13d8588c538a9b5bc0ff4.png" alt="汉拿山" ></a>
+            <a href="jubang.html"><img src="https://pic1.imgdb.cn/item/67d1304288c538a9b5bc0654.png" alt="剧bang" ></a>
+            <a href="guanshichiba.html"><img src="https://pic1.imgdb.cn/item/67d13e3e88c538a9b5bc10e6.png" alt="管氏翅吧" ></a>
+            <a href="changxiangju.html"><img src="https://pic1.imgdb.cn/item/67d2bfaf88c538a9b5bc81c0.png" alt="常湘聚" ></a>
+            <a href="ningji.html"><img src="https://pic1.imgdb.cn/item/67d135d188c538a9b5bc0a57.png" alt="柠季" ></a>
+            <a href="womeiyingcheng.html"><img src="https://pic1.imgdb.cn/item/67d13b8588c538a9b5bc0ebf.png" alt="沃美影城" ></a>
+            <a href="lushanchuan.html"><img src="https://pic1.imgdb.cn/item/67d13eb988c538a9b5bc1187.png" alt="卤山川" ></a>
+            <a href="miniye.html"><img src="https://pic1.imgdb.cn/item/67d2c0b188c538a9b5bc81e4.png" alt="迷你椰" ></a>
+            <a href="niuyofan.html"><img src="https://pic1.imgdb.cn/item/67d13a8988c538a9b5bc0e94.png" alt="牛yo范" ></a>
+            <a href="xiangcunji.html"><img src="https://pic1.imgdb.cn/item/67d135d188c538a9b5bc0a56.png" alt="乡村基" ></a>
+            <a href="jiangbianchengwai.html"><img src="https://pic1.imgdb.cn/item/67d1304288c538a9b5bc0653.png" alt="江边城外" ></a>
+            <a href="liyin.html"><img src="https://pic1.imgdb.cn/item/67d1304288c538a9b5bc0656.png" alt="荔银" ></a>
+
     </div>
     <div class="footer">@中国社会科学院大学学生会公关部出品</div>
 </body>
 </html>
+
