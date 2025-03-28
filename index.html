@@ -39,6 +39,18 @@
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
+        .yellow-box {
+            background-color: #ffff99; /* 浅黄色 */
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        .blue-box {
+            background-color: #99ccff; /* 浅蓝色 */
+            padding: 30px;
+            margin-top: 30px;
+        }
+
         .gallery {
             display: grid;
             grid-template-columns: repeat(4, 1fr); /* 四列 */
@@ -47,9 +59,9 @@
             margin-top: 20px;
         }
         .category-box {
-            background-color: #ffff;
-            padding: 30px;
-            margin-top: 30px;
+            background-color: transparent;
+            padding: 0; /* 移除内边距，因为现在由yellow-box和blue-box控制 */
+            margin-top: 0; /* 移除上边距，因为现在由yellow-box和blue-box控制 */
         }
         .category-title {
             vertical-align: middle;
